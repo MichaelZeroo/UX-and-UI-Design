@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sportheader1"
+            android:scaleType="centerCrop"
+            android:alpha=".75"
+            />
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:src="@drawable/sport1"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/score"
+            style="@style/Header"
+            android:layout_below="@id/background_image"
+            android:layout_toRightOf="@id/main_image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 8.54/10"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/airing_year"
+            style="@style/Header"
+            android:layout_below="@id/score"
+            android:layout_toRightOf="@id/main_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airing Year: 1999"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/studio"
+            style="@style/Header"
+            android:layout_below="@id/airing_year"
+            android:layout_toRightOf="@id/main_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Studio: Toei Animation"
+            android:textSize="24sp"/>
+
+        <TextView
+            style="@style/Header"
+            android:id="@+id/synopsis"
+            android:layout_below="@id/main_image"
+            android:layout_marginLeft="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Synopsis"
+            android:textColor="#D50000"
+            android:textSize="24sp"/>
+        <TextView
+            style="@style/mainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synopsis"
+            android:text=""
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16sp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+</ScrollView>
